@@ -5,7 +5,7 @@ The videos are collected at different times during day/week so it is easy to obs
 
 ![alt text](https://github.com/StegarescuAnaMaria/Visual_Traffic_Monitoring_at_a_Road_Intersection_Computer_Vision/blob/main/images/1.png)
 
-#Task 1:
+# Task 1:
 Road lanes are numbered from 1 to 3 for the upper left part of the intersection, 4 to 6 for the right part and 7 to 9 for the bottom right part of the intersection.
 ![alt text](https://github.com/StegarescuAnaMaria/Visual_Traffic_Monitoring_at_a_Road_Intersection_Computer_Vision/blob/main/images/2.png)
 
@@ -21,4 +21,4 @@ value.
 I used the “shapely” library, and created a polygon object as the lane, and a box object as the bounding box of the identified object, calculated the area of their intersection, divided it by the area of the bounding box, and set a threshold of 0.7 (70%): if the result of the division is bigger 
 than 0.7, then (most) of the bounding box, if not all, is part of the polygon/lane. If true, the answer is 1, else 0, for the question “Is the x lane occupied by a vehicle for the y image?”.
 
-#Task 2:#
+# Task 2:
