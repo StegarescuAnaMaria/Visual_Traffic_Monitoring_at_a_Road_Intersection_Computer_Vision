@@ -5,7 +5,7 @@ The videos are collected at different times during day/week so it is easy to obs
 
 ![alt text](https://github.com/StegarescuAnaMaria/Visual_Traffic_Monitoring_at_a_Road_Intersection_Computer_Vision/blob/main/images/1.png)
 
-#Task 1:#
+#Task 1:
 Road lanes are numbered from 1 to 3 for the upper left part of the intersection, 4 to 6 for the right part and 7 to 9 for the bottom right part of the intersection.
 ![alt text](https://github.com/StegarescuAnaMaria/Visual_Traffic_Monitoring_at_a_Road_Intersection_Computer_Vision/blob/main/images/2.png)
 
