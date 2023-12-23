@@ -13,10 +13,7 @@ YOLOv8 (object detection model) was used for object (in this case vehicle) detec
 YOLOv8 has a number of “classes” for object detection available, each class having an assigned number 
 to it. 4 classes are taken into account (2, 3, 5, 7): {2: 'car', 3: 'motorcycle', 5: 'bus', 7: 'truck'}.
  
-Firstly, I took the coordinates for each of the 9 lanes, by uploading some sample train images to 
-https://nutbread.github.io/icm/ and selecting each point manually. The coordinates were hard-coded 
-into a dictionary, the number of the lane being the key, and the array of “tuples” (x, y coord) being the 
-value.
+Firstly, I took the coordinates for each of the 9 lanes, by uploading some sample train images to https://nutbread.github.io/icm/ and selecting each point manually. The coordinates were hard-coded into a dictionary, the number of the lane being the key, and the array of “tuples” (x, y coord) being the value.
 
 I used the “shapely” library, and created a polygon object as the lane, and a box object as the bounding box of the identified object, calculated the area of their intersection, divided it by the area of the bounding box, and set a threshold of 0.7 (70%): if the result of the division is bigger 
 than 0.7, then (most) of the bounding box, if not all, is part of the polygon/lane. If true, the answer is 1, else 0, for the question “Is the x lane occupied by a vehicle for the y image?”.
